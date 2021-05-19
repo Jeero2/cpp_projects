@@ -10,7 +10,7 @@ int main()
     float s;
     cout<<"\nenter three sides of triangle";
     cin>>a>>b>>c;
-    s=((a+b+c)/3);
+    s=((a+b+c)/2);
     cout<<"\ns= "<<s;
     area=sqrt(s*(s-a)*(s-b)*(s-c));
     cout<<"\narea of triangle is:"<<area;
