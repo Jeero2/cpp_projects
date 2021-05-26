@@ -14,20 +14,20 @@ int main()
     for (i=0;i<3;i++)
     {
         cout<<"Enter the details of student:"<<endl;
-        cout<<"\nNAME:"<<endl;
+        cout<<"NAME:"<<endl;
         cin>>s[i].name;
-        cout<<"\nROLL:"<<endl;
+        cout<<"ROLL:"<<endl;
         cin>>s[i].roll;
-        cout<<"\nADDRESS:"<<endl;
+        cout<<"ADDRESS:"<<endl;
         cin>>s[i].address;
         
     }
+    cout<<"The Details are:"<<endl;
     for (j=0;j<3;j++)
     {
-        cout<<"\nThe Details are:"<<endl;
-        cout<<"\nNAME:"<<s[j].name;
-        cout<<"\nROLL:"<<s[j].roll;
-        cout<<"\nADDRESS:"<<s[j].address;
+        cout<<"NAME:"<<s[j].name;
+        cout<<"  ROLL:"<<s[j].roll;
+        cout<<"  ADDRESS:"<<s[j].address<<endl;
     }
     
 }
