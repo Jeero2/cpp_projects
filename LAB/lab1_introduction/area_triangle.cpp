@@ -8,6 +8,6 @@ int main() {
     cout<<"input base and height: ";
     cin>>b>>h;
     area=((0.5)*b*h);
-    cout<<"area of triangle is:"<<area;
+    cout<<" area of triangle is:"<<area;
     return 0;
 } 
