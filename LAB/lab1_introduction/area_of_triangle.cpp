@@ -8,7 +8,7 @@ int main()
     float a,b,c;
     float area;
     float s;
-    cout<<"\nenter three sides of triangle";
+    cout<<"\n enter three sides of triangle";
     cin>>a>>b>>c;
     s=((a+b+c)/2);
     cout<<"\ns= "<<s;
