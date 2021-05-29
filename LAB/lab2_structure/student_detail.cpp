@@ -10,7 +10,7 @@ struct student{
 int main()
 {
     student s;
-    cout<<"Enter the details of student:"<<endl;
+    cout<<" Enter the details of student:"<<endl;
     cout<<"\nNAME:"<<endl;
     cin>>s.name;
     cout<<"\nROLL:"<<endl;
