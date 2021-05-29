@@ -13,7 +13,7 @@ int main()
     int i,j;
     for (i=0;i<3;i++)
     {
-        cout<<"Enter the details of student:"<<endl;
+        cout<<" Enter the details of student:"<<endl;
         cout<<"NAME:"<<endl;
         cin>>s[i].name;
         cout<<"ROLL:"<<endl;
