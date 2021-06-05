@@ -32,5 +32,12 @@ int main()
     cout<<"\nnumber="<<number;
     number1=num1--;
     cout<<"\nnumber1="<<number1;
-        //here ++ is increment operator and --is decrement operator.       
+        //here ++ is increment operator and --is decrement operator.
+    //Bitwise operators
+    //cout<<"7&4="<<7&4;//here & is bitwise and operator
+    //cout<<"7|4="<<7|4;//here | is bitwise or operator
+    //cout<<"7<<1"<<7<<1;//here << is left shift operator. it shifts the bits of 7 by 1
+    //cout<"7>>1"<<7>>1;//here >> is right shift operator. it shifts the bits of 7 by 1.
+
+
 } 
