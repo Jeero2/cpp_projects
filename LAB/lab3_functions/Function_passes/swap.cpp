@@ -1,13 +1,13 @@
 //program to swap values of two variables using pass by reference
 #include<iostream>
 using namespace std;
-void swap(int *x, int *y)//receiving address of a and b
+void swap(int &x, int &y)//receiving address of a and b
 {
     // x contains address of a and y contains address of b 
-    int *c;
-    c=x;//storing address of a to pointer variable c
-    x=y;//storing y (which has address of b) to pointer variable x 
-    y=c;//storing c(which contains address of a) to y
+    int c;
+    c=x;//storing value of address x(i.e a) to c
+    x=y;//storing y (which has b) to x 
+    y=c;//storing c(which contains a) to y
 }
 int main()
 {
