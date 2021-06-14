@@ -13,6 +13,7 @@ class Room {
             length = len;
             breadth = bth;
             height = hgt;
+            return 0;
         }
 
         double calculateArea() {
