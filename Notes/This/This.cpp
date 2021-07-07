@@ -1,3 +1,4 @@
+//Illustration of this pointer variable
 #include<iostream>
 using namespace std;
 class mobile
@@ -6,9 +7,9 @@ class mobile
     public:
         void display()
         {
-            cout<<"m= "<<m<<endl;
-            cout<<"this->m= "<<this->m<<endl;
-            cout<<this<<endl;
+            cout<<"this->m= "<<this->m<<endl;// m1.display() garda this le m1 ko address lai point garirahuncha ani m2.display garda m2 ko address 
+            cout<<"m= "<<m<<endl;// yesma ni compiler le this keyword  bydefault generate garxa ,  mathi ko ra yo statement same ho
+            cout<<this<<endl;// this le address lai point garxa
 
         }
 };
@@ -20,3 +21,5 @@ int main()
     return 0; 
 
 }
+
+ 
