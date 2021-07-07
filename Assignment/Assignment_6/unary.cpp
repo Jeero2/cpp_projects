@@ -1,3 +1,5 @@
+//operator overloading of ++
+//unary operator overloading
 #include<iostream>
 using namespace std;
 class unary
@@ -13,9 +15,9 @@ class unary
         }
         void operator ++()
         {
-            a=a+2;
-            b=b+2;
-            c=c+2;
+            a=++a;
+            b=++b;
+            c=++c;
         }
         void display()
         {
