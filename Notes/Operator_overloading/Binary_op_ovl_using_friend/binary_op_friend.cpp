@@ -45,7 +45,10 @@ int main()
     Distance d1(4,5);
     Distance d2(2,5);
     Distance d3;
-    d3= d1+ d2;
+    d3= d1+ d2; //d1 le + overload function lai call gareko hunxa.
+    //d1 ko data attributes pass hunxa.So, mathi ko this->feet implies d1 ko feet.
+    //L.H.S ko afai pass vaira hunxa 
+    //R.H.S ko chai as parameter pass garnu parxa. So, unary ma pass garn pardaina.
     d3.display();
 
 }
