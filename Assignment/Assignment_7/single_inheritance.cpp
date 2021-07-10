@@ -33,9 +33,9 @@ int main()
     student s1;
     return 0;
 }
-//OUTPUT:
-//Constructor - college.
-//Constructor - student
-//Destructor - student
-//Destructor - college.
+// OUTPUT:
+// Constructor - college.
+// Constructor - student
+// Destructor - student
+// Destructor - college.
 
