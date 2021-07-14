@@ -13,7 +13,7 @@ class Person
            cin>>this->code;
            cout<<"Enter name:"<<endl;
            cin>>this->name;
-           cin.ignore();
+           cin.ignore();//getline le enter lai ni input liney vayeko le tyo enter lai ignore gara vanera command deko
            
        }
   
@@ -33,7 +33,7 @@ class Account: public  virtual Person
             cout<<"Name:"<<this->name<<endl;
             cout<<"Code:"<<this->code<<endl;
             cout<<"Pay:"<<this->pay<<endl;
-            cin.ignore();
+            
         }
 
 };
@@ -45,7 +45,7 @@ class Admin : public virtual Person
         void getData_Admin()
         {
             cout<<"enter experience"<<endl;
-            getline(cin,this->experience);
+            getline(cin,this->experience);//string input ko lai getline easy hunxa
         }
         void display_Admin()
         {
