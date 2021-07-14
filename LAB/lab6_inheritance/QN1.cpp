@@ -11,10 +11,9 @@ class Staff
             
             cout<<"Enter staff code:"<<endl;
             cin>>this->code;
-            //this->code=code;
             cout<<"Enter name:"<<endl;
             cin>>this->name;
-            //this->name=name;
+            
         }
         
 };
@@ -26,12 +25,11 @@ class Teacher: public Staff
         void getData_Teacher()
         {
             cout<<"Enter subject for teaching:"<<endl;
-            cin>>subject;
-            this->subject=subject;
+            cin>>this->subject;
             cout<<"Enter publictaion of book used:"<<endl;
-            cin>>publication;
-            this->publication=publication; 
+            cin>>this->publication;
         }
+            
         void display_Teacher()
         {
             cout<<"Code number for staff is: "<<this->code<<endl;
@@ -47,9 +45,9 @@ class Officer:public Staff
     public:
         void getData_Officer()
         {
-            string grade;
+            
             cout<<"Enter grade:"<<endl;
-            cin>>grade;
+            cin>>this->grade;
         }
         void display_Officer()
         {
@@ -65,12 +63,10 @@ class Typist:public Staff
     public:
         void getData_Typist()
         {
-            float speed;
             cout<<"Enter typing speed in wpm:"<<endl;
-            cin>>speed;
-            this->speed=speed;
+            cin>>this->speed;
         }
-        
+         
 };
 class Regular:public Typist
 {
@@ -80,11 +76,10 @@ class Regular:public Typist
 
         void getData_Regular()
         {
-            float daily_wages;
             cout<<"Enter your daily wages:"<<endl;
-            cin>>daily_wages;
-            this->daily_wages=daily_wages;
+            cin>>this->daily_wages;
         }
+            
         void display_Regular()
         {
             cout<<"Code number for staff is: "<<this->code<<endl;
@@ -101,11 +96,11 @@ class Casual:public Typist
     public:
         void getData_Casual()
         {
-            float daily_wages;
+            
             cout<<"Enter your daily wages:"<<endl;
-            cin>>daily_wages;
-            this->daily_wages=daily_wages;
+            cin>>this->daily_wages;
         }
+            
         void display_Casual()
         {
             cout<<"Code number for staff is: "<<this->code<<endl;
@@ -117,7 +112,7 @@ class Casual:public Typist
 
 int main()
 {
-    Staff s;
+    
     Teacher t;
     Officer o;
     Typist y;
@@ -138,26 +133,28 @@ int main()
         switch (choice)
         {
             case 1:
-                s.getData_Staff();
+                t.getData_Staff();
                 t.getData_Teacher();
                 break;
             case 2:
-                s.getData_Staff();
+                o.getData_Staff();
                 o.getData_Officer();
                 break;
             case 3:
             {
-                s.getData_Staff();
-                y.getData_Typist();
                 char a;
                 cout<<"Regular or casual typist?"<<"\n Enter R for regular and C for casual:"<<endl;
                 cin>>a;
                 if (a=='R' || a=='r')
                 {
+                    r.getData_Staff();
+                    r.getData_Typist();
                     r.getData_Regular();
                 }
                 else if(a=='C'|| a=='c')
                 {
+                    c.getData_Staff();
+                    c.getData_Typist();
                     c.getData_Casual();
                 }
                 else
