@@ -6,7 +6,7 @@ class Animal
     public:
         Animal()
         {
-            cout<<"Constructor of abstract class(Animal class)."<<endl;
+            cout<<"Constructor of Animal class."<<endl;
         }
         virtual void display()
         {
@@ -15,7 +15,7 @@ class Animal
                
         ~Animal()
         {
-            cout<<"Destructor of abstract class(Animal class)."<<endl;
+            cout<<"Destructor of Animal class."<<endl;
         }
 
 };
