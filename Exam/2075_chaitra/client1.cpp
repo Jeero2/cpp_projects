@@ -11,6 +11,7 @@ fstream file;
 void get_info()
 {  
     Client c;
+    remove("client1.dat");
     
     file.open("client1.dat" , ios :: app);
         int n;
@@ -22,7 +23,7 @@ void get_info()
             cin >> c.client_ID;
             cout << "Enter client name: " << endl;
             cin >> c.client_name; 
-            file.write(reinterpret_cast<char*>(&c) , sizeof(Client));
+            file.write(reinterpret_cast<char*>(&c) , sizeof(c));
         } 
     file.close();                    
             
@@ -31,9 +32,10 @@ void get_info()
 void display()
 {
     Client c1;
+    cout << "Displaying info" << endl;
 
     file.open("client1.dat" , ios::in);
-        while(file.read(reinterpret_cast<char*>(&c1),sizeof(Client)))        
+        while(file.read(reinterpret_cast<char*>(&c1),sizeof(c1)))        
         {
             cout << "Client_ID: " << c1.client_ID << endl;
             cout << "Client name: " << c1.client_name << endl;
@@ -45,7 +47,7 @@ void display()
 void total()
 {
     
-    file.open("client1.dat", ios::ate);
+    file.open("client1.dat", ios::in | ios::ate);
     cout << "Total clients: " << file.tellg()/sizeof(Client) << endl;
     file.close(); 
 
